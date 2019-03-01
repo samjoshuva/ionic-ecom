@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Products</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="funnel"></ion-icon>
+      </ion-button>
+      <ion-button (click)="openCart()">
+        <ion-icon name="cart"> </ion-icon>
+        <ion-badge color="success">2</ion-badge>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card (click)="openActionSheet()">
+    <img src="https://via.placeholder.com/300x300" />
+    <ion-card-content>
+      <h3>Product one</h3>
+      <br />
+      Short Description
+    </ion-card-content>
+  </ion-card>
+</ion-content>
